@@ -1,7 +1,7 @@
 <?php 
 
-    include('../../config/constants.php'); 
-   // include('login-check.php');
+    include('../config/constants.php'); 
+    include('login-check.php');
 
 ?>
 <html>
@@ -27,7 +27,7 @@
     <header class="main-header">
         <div class="container">
             <h1 class="mh-logo">
-                <img src="../image/logo2.2.png" width="350px" height="150px" alt="Foodie Paradise logo">
+                <img src="./../image/logo2.2.png" width="350px" height="150px" alt="Foodie Paradise logo">
             </h1>
             <nav class="main-nav">
                 <ul class="main-nav-list" style="margin-right: -200px">
