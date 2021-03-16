@@ -57,7 +57,7 @@
                             if($current_image != "")
                             {
                                 ?>
-                                <img src="<?php echo SITEURL; ?>image/category/<?php echo $current_image; ?>" width="150px">
+                                <img src="<?php echo SITEURL; ?>../image/category/<?php echo $current_image; ?>" width="150px">
                                 <?php
                             }
                             else

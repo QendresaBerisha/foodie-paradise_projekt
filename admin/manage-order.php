@@ -33,10 +33,8 @@
 
                     <?php 
                         //Get all the orders from database
-                        $sql = "SELECT * FROM porosia ORDER BY id DESC"; // Display the Latest Order at First
-                        //Execute Query
+                        $sql = "SELECT * FROM porosia ORDER BY id DESC"; 
                         $res = mysqli_query($conn, $sql);
-                        //Count the Rows
                         $count = mysqli_num_rows($res);
 
                         $sn = 1; 
@@ -48,7 +46,7 @@
                             {
                                 //Get all the order details
                                 $id = $row['id'];
-                                $ushqimi = $row['ushqimi'];
+                                $emri_ushqimit = $row['emri_ushqimit'];
                                 $cmimi = $row['cmimi'];
                                 $sasia = $row['sasia'];
                                 $total = $row['total'];
@@ -63,7 +61,7 @@
 
                                     <tr>
                                         <td><?php echo $sn++; ?>. </td>
-                                        <td><?php echo $ushqimi; ?></td>
+                                        <td><?php echo $emri_ushqimit; ?></td>
                                         <td><?php echo $cmimi; ?></td>
                                         <td><?php echo $sasia; ?></td>
                                         <td><?php echo $total; ?></td>
@@ -72,21 +70,21 @@
                                         <td>
                                             <?php 
                                     
-                                               if($status=="Porositur")
+                                               if($statusi=="Porositur")
                                                 {
-                                                    echo "<label>$status</label>";
+                                                    echo "<label>$statusi</label>";
                                                 }
-                                                elseif($status=="Ne Dergese")
+                                                elseif($statusi=="Ne Dergese")
                                                 {
-                                                    echo "<label style='color: orange;'>$status</label>";
+                                                    echo "<label style='color: orange;'>$statusi</label>";
                                                 }
-                                                elseif($status=="E Derguar")
+                                                elseif($statusi=="E Derguar")
                                                 {
-                                                    echo "<label style='color: green;'>$status</label>";
+                                                    echo "<label style='color: green;'>$statusi</label>";
                                                 }
-                                                elseif($status=="Anuluar")
+                                                elseif($statusi=="Anuluar")
                                                 {
-                                                    echo "<label style='color: red;'>$status</label>";
+                                                    echo "<label style='color: red;'>$statusi</label>";
                                                 }
                                             ?>
                                         </td>

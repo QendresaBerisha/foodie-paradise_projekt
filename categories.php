@@ -2,7 +2,7 @@
 
 <section class="categories">
 
-    <div class="container">
+    <div class="container1">
 
         <h2 class="text-center">Ushqimet me Kategori</h2>
         <?php
@@ -78,7 +78,7 @@
 
                             ?>
 
-                            <h3 class="float-text text-white"><?php echo $titulli; ?></h3>
+                            <h3 class="float-text text-color"><?php echo $titulli; ?></h3>
 
                         </div>
 
