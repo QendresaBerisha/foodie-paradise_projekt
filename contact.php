@@ -93,4 +93,5 @@
 
     </body>
 </html>
+<br><br>
 <?php include ('partials/footer.php'); ?>
