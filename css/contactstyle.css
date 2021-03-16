@@ -12,7 +12,6 @@ h1 {
 }
 
 
-
 /* ///// inputs /////*/
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {

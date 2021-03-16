@@ -64,7 +64,7 @@
 
                    
 
-                    <a href="<?php echo SITEURL; ?>category-foods.php?kategoria_id=<?php echo $id; ?>">
+                    <a href="<?php echo SITEURL; ?>category-food.php?kategoria_id=<?php echo $id; ?>">
 
                         <div class="box-3 float-container">
 

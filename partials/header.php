@@ -1,13 +1,6 @@
-<?php
-
-    include('config/constants.php');
-
-?>
+<?php include('config/constants.php');?>
 
 <html>
-
- 
-
 <head>
 
 <meta charset="UTF-8">
@@ -38,7 +31,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
-    <link rel='stylesheet' type='text/css' href='css/menustyle.css'>
+    <link rel='stylesheet' type='text/css' href='css/allstyle.css'>
 
 </head>
 
@@ -82,7 +75,7 @@
 
                     <li>
 
-                        <a href="#">Contact</a>
+                        <a href="<?php echo SITEURL; ?>contact.php">Contact</a>
 
                     </li>
 
