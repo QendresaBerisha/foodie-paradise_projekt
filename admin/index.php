@@ -54,7 +54,7 @@
                     
                     <?php 
                       
-                        $sql4 = "SELECT SUM(total) AS total FROM porosia WHERE status='E Derguar'";
+                        $sql4 = "SELECT SUM(total) AS total FROM porosia WHERE statusi='E Derguar'";
 
                         $res4 = mysqli_query($conn, $sql4);
 
@@ -64,9 +64,9 @@
 
                     ?>
 
-                    <h1>$<?php echo $total_revenue; ?></h1>
+                    <h1><?php echo $total_revenue; ?>€</h1>
                     <br />
-                    Revenue Generated
+                    Te Ardhurat e Fituara
                 </div>
 
                 <div class="clearfix"></div>
