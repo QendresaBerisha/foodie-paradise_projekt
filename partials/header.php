@@ -38,7 +38,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
-    <link rel='stylesheet' type='text/css' href='../css/menustyle.css'>
+    <link rel='stylesheet' type='text/css' href='css/menustyle.css'>
 
 </head>
 

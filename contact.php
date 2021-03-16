@@ -6,47 +6,89 @@
         <meta charset="UTF-8">
         <title>Contact</title>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="initial-scale=1.0 width=device-width">
     </head>
     <body>
 
 
-<div class="wrapper">
-    <h2>CONTACT</h2>
-    <div id="error_message"></div>
+    <div class="container">
 
-    <form id="myform">
-         <div class="input_field">
-             <input type="text" placeholder="Name" id="name">
-         </div>
-         <div class="input_field">
-             <input type="text" placeholder="Subject" id="subject">
-         </div>
-         <div class="input_field">
-            <input type="text" placeholder="Phone" id="phone">
-        </div>
-        <div class="input_field">
-            <input type="text" placeholder="Email" id="email">
-        </div>
-        <div class="input_field">
-            <textarea id="message" placeholder="Message" ></textarea>
-        </div>
-            <div class="btn">
-                <input type="submit">
-            
-        
-        
-         </div>
-    </form>
+<div class="row">
+
+             <h1>contact us</h1>
+
 </div>
 
-<div class="footer">
- <a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-snapchat"></a>
-<a href="#" class="fa fa-instagram"></a>
+<div class="row">
+
+             <h4 style="text-align:center">We'd love to hear from you!</h4>
+
+</div>
+
+<div class="row input-container">
+
+             <div class="col-xs-12">
+
+                    <div class="styled-input wide">
+
+                           <input type="text" required />
+
+                           <label>Name</label>
+
+                    </div>
+
+             </div>
+
+             <div class="col-md-6 col-sm-12">
+
+                    <div class="styled-input">
+
+                           <input type="text" required />
+
+                           <label>Email</label>
+
+                    </div>
+
+             </div>
+
+             <div class="col-md-6 col-sm-12">
+
+                    <div class="styled-input" style="float:right;">
+
+                           <input type="text" required />
+
+                           <label>Phone Number</label>
+
+                    </div>
+
+             </div>
+
+             <div class="col-xs-12">
+
+                    <div class="styled-input wide">
+
+                           <textarea required></textarea>
+
+                           <label>Message</label>
+
+                    </div>
+
+             </div>
+
+             <div class="col-xs-12">
+
+                    <div class="btn-lrg submit-btn">Send Message</div>
+
+             </div>
+
+</div>
+
+</div>
+
+
+
 </div>
 
     </body>
