@@ -1,6 +1,6 @@
 body {
     background-color: #444442;
-    padding-top: 85px;
+    padding-top: 0px;
 }
 
 h1 {
@@ -85,7 +85,7 @@ textarea {
 }
 
 .submit-btn {
-    float: right;
+    float: none;
     padding: 7px 35px;
     border-radius: 60px;
     display: inline-block;

@@ -67,14 +67,6 @@
     </div>
 
 </section>
-
-<!-- fOOD sEARCH Section Ends Here -->
-
-
-
-
-<!-- fOOD MEnu Section Starts Here -->
-
 <section class="food-menu">
 
     <div class="container">
@@ -143,7 +135,7 @@
 
                                     //Image not Available
 
-                                    echo "<div class='error'>Image not Available.</div>";
+                                    echo "<div class='error'>Fotografia nuk eshte ne dispozicion!</div>";
 
                                 }
 
@@ -155,7 +147,7 @@
 
                                     ?>
 
-                                    <img src="<?php echo SITEURL; ?>image/food/<?php echo $image_name; ?>" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                                    <img src="<?php echo SITEURL; ?>image/food/<?php echo $image_name; ?>" alt="Image not available" class="img-responsive img-curve">
 
                                     <?php
 
@@ -173,7 +165,7 @@
 
                             <h4><?php echo $titulli; ?></h4>
 
-                            <p class="food-price">$<?php echo $cmimi; ?></p>
+                            <p class="food-price"><?php echo $cmimi; ?>€</p>
 
                             <p class="food-detail">
 
@@ -205,36 +197,15 @@
 
                 //Food not available
 
-                echo "<div class='error'>Food not Available.</div>";
+                echo "<div class='error'>Ushqimi nuk eshte ne dispozicion!</div>";
 
             }
 
         
 
         ?>
-
- 
-
-        
-
- 
-
         <div class="clearfix"></div>
-
- 
-
-        
-
- 
-
     </div>
-
- 
-
 </section>
-
-<!-- fOOD Menu Section Ends Here -->
-
- 
 
 <?php include('partials/footer.php'); ?>
