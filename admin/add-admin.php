@@ -52,7 +52,7 @@
     </div>
 </div>
 
-<?php include('partial/footer.php'); ?>
+
 
 
 <?php 
@@ -94,3 +94,5 @@
     }
     
 ?>
+<br><br>
+<?php include('partial/footer.php'); ?>

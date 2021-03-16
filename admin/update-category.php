@@ -207,5 +207,5 @@
 
     </div>
 </div>
-
+<br><br>
 <?php include('partial/footer.php'); ?>
