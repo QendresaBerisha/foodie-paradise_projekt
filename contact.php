@@ -17,7 +17,8 @@
 
 <div class="row">
 
-             <h1>NA KONTAKTONI</h1>
+             <h1>KONTAKTI
+             </h1>
 
 </div>
 
@@ -92,3 +93,4 @@
 
     </body>
 </html>
+<?php include ('partials/footer.php'); ?>
