@@ -17,14 +17,13 @@
 
 <div class="row">
 
-             <h1>contact us</h1>
+             <h1>NA KONTAKTONI</h1>
 
 </div>
 
 <div class="row">
 
-             <h4 style="text-align:center">We'd love to hear from you!</h4>
-
+             
 </div>
 
 <div class="row input-container">
@@ -35,7 +34,7 @@
 
                            <input type="text" required />
 
-                           <label>Name</label>
+                           <label>Emri</label>
 
                     </div>
 
@@ -59,7 +58,7 @@
 
                            <input type="text" required />
 
-                           <label>Phone Number</label>
+                           <label>Numri Telefonit</label>
 
                     </div>
 
@@ -71,7 +70,7 @@
 
                            <textarea required></textarea>
 
-                           <label>Message</label>
+                           <label>Mesazhi</label>
 
                     </div>
 
@@ -79,7 +78,7 @@
 
              <div class="col-xs-12">
 
-                    <div class="btn-lrg submit-btn">Send Message</div>
+                    <div class="btn-lrg submit-btn">Dergo Mesazh</div>
 
              </div>
 
