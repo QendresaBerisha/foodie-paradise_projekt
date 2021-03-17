@@ -68,7 +68,7 @@
                         else
                         {
                             ?>
-                            <img src="<?php echo SITEURL; ?>images/food/<?php echo $current_image; ?>" width="150px">
+                            <img src="<?php echo SITEURL; ?>image/food/<?php echo $current_image; ?>" width="150px">
                             <?php
                         }
                     ?>

@@ -112,7 +112,7 @@
 
                             //Image not Availabe
 
-                            echo "<div class='error'>Image not Available.</div>";
+                            echo "<div class='error'>Fotografia ekziston!</div>";
 
                         }
 
@@ -124,7 +124,7 @@
 
                             ?>
 
-                            <img src="<?php echo SITEURL; ?>image/food/<?php echo $image_name; ?>" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                            <img src="<?php echo SITEURL; ?>image/food/<?php echo $image_name; ?>" alt="Image not available" class="img-responsive img-curve">
 
                             <?php
 
@@ -333,5 +333,5 @@
 <!-- fOOD sEARCH Section Ends Here -->
 
  
-
+<br><br>
 <?php include('partials/footer.php'); ?>

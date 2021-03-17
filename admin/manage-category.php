@@ -109,7 +109,7 @@
                                                     //Display the Image
                                                     ?>
                                                     
-                                                    <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" width="100px" >
+                                                    <img src="<?php echo SITEURL; ?>image/category/<?php echo $image_name; ?>" width="100px" >
                                                     
                                                     <?php
                                                 }

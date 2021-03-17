@@ -107,8 +107,8 @@ margin: 10px 200px 10px;
 .text-left{
     text-align: left;
 }
-.text-white{
-    color: white;
+.text-color{
+    color:black;
 }
 
 .clearfix{

@@ -1,29 +1,11 @@
 <?php include('partials/header.php'); ?>
 
- 
-
- 
-
- 
-
-<!-- CAtegories Section Starts Here -->
-
 <section class="categories">
 
-    <div class="container">
+    <div class="container1">
 
         <h2 class="text-center">Ushqimet me Kategori</h2>
-
- 
-
         <?php
-
- 
-
-            //Display all the cateories that are active
-
-            //Sql Query
-
             $sql = "SELECT * FROM kategoria WHERE active='Po'";
 
  
@@ -96,18 +78,11 @@
 
                             ?>
 
-                           
-
- 
-
-                            <h3 class="float-text text-white"><?php echo $titulli; ?></h3>
+                            <h3 class="float-text text-color"><?php echo $titulli; ?></h3>
 
                         </div>
 
                     </a>
-
- 
-
                     <?php
 
                 }
@@ -122,27 +97,14 @@
 
                 echo "<div class='error'>Kategoria nuk ekziston!</div>";
 
-            }
-
-       
+            }      
 
         ?>
-
-       
-
- 
-
         <div class="clearfix"></div>
 
     </div>
 
-</section>
-
-<!-- Categories Section Ends Here -->
-
- 
-
- 
+</section> 
 
 <?php include('partials/footer.php'); ?>
 

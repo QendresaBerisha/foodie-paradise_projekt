@@ -22,7 +22,7 @@
                 {
                     $row=mysqli_fetch_assoc($res);
 
-                    $ushqimi = $row['ushqimi'];
+                    $emri_ushqimit = $row['emri_ushqimit'];
                     $cmimi = $row['cmimi'];
                     $sasia = $row['sasia'];
                     $statusi = $row['statusi'];
@@ -50,7 +50,7 @@
             <table class="tbl-30">
                 <tr>
                     <td>Emri i Ushqimit</td>
-                    <td><b> <?php echo $ushqimi; ?> </b></td>
+                    <td><b> <?php echo $emri_ushqimit; ?> </b></td>
                 </tr>
 
                 <tr>
@@ -70,11 +70,11 @@
                 <tr>
                     <td>Status</td>
                     <td>
-                        <select name="status">
-                            <option <?php if($status=="Porositur"){echo "selected";} ?> value="Porositur">Porositur</option>
-                            <option <?php if($status=="Ne Dergese"){echo "selected";} ?> value="Ne Dergese">Ne Dergese</option>
-                            <option <?php if($status=="E Derguar"){echo "selected";} ?> value="E Derguar">E Derguar</option>
-                            <option <?php if($status=="Anuluar"){echo "selected";} ?> value="Anuluar">Anuluar</option>
+                        <select name="statusi">
+                            <option <?php if($statusi=="Porositur"){echo "selected";} ?> value="Porositur">Porositur</option>
+                            <option <?php if($statusi=="Ne Dergese"){echo "selected";} ?> value="Ne Dergese">Ne Dergese</option>
+                            <option <?php if($statusi=="E Derguar"){echo "selected";} ?> value="E Derguar">E Derguar</option>
+                            <option <?php if($statusi=="Anuluar"){echo "selected";} ?> value="Anuluar">Anuluar</option>
                         </select>
                     </td>
                 </tr>
