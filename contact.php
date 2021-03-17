@@ -19,7 +19,7 @@
 
 <div class="row">
 
-             <h1>Kontakti
+             <h1>KONTAKTI
              </h1>
 
 </div>
