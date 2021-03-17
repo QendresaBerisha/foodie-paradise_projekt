@@ -81,7 +81,7 @@
                                 <tr>
                                     <td><?php echo $sn++; ?>. </td>
                                     <td><?php echo $titulli; ?></td>
-                                    <td>$<?php echo $cmimi; ?></td>
+                                    <td><?php echo $cmimi; ?>€</td>
                                     <td>
                                         <?php  
                                             if($image_name=="")

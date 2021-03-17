@@ -184,14 +184,11 @@
 
                             ?>
                         </div>
-
- 
-
-                        <div class="food-menu-desc">
+                       <div class="food-menu-desc">
 
                             <h4><?php echo $titulli; ?></h4>
 
-                            <p class="food-price">$<?php echo $cmimi; ?></p>
+                            <p class="food-price"><?php echo $cmimi; ?>€</p>
 
                             <p class="food-detail">
 

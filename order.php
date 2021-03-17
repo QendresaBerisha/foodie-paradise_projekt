@@ -149,7 +149,7 @@
 
  
 
-                    <p class="food-price">€<?php echo $cmimi; ?></p>
+                    <p class="food-price"><?php echo $cmimi; ?>€</p>
 
                     <input type="hidden" name="cmimi" value="<?php echo $cmimi; ?>">
 
@@ -301,7 +301,7 @@
 
                     $_SESSION['order'] = "<div class='success text-center'>Ushqimi eshte porositur me sukses!</div>";
 
-                    header('location:'.SITEURL);
+                    header('location:'.SITEURL."homepage.php");
 
                 }
 

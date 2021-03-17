@@ -4,7 +4,7 @@
 
     <div class="container1">
 
-        <h2 class="text-center">Ushqimet me Kategori</h2>
+        <h2 class="h1-menu">Ushqimet në Kategori</h2>
         <?php
             $sql = "SELECT * FROM kategoria WHERE active='Po'";
 

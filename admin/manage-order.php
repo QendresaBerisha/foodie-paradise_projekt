@@ -62,9 +62,9 @@
                                     <tr>
                                         <td><?php echo $sn++; ?>. </td>
                                         <td><?php echo $emri_ushqimit; ?></td>
-                                        <td><?php echo $cmimi; ?></td>
+                                        <td><?php echo $cmimi; ?>€</td>
                                         <td><?php echo $sasia; ?></td>
-                                        <td><?php echo $total; ?></td>
+                                        <td><?php echo $total; ?>€</td>
                                         <td><?php echo $data_porosise; ?></td>
 
                                         <td>

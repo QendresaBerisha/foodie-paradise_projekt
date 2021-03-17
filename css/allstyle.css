@@ -36,23 +36,21 @@ body {
 margin: 10px 200px 10px;
 }
 
+/* CSS for Food Menu */
 .food-menu{
-  
   padding: 4% 0;
 }
 .food-menu-box{
   width: 43%;
   margin: 1%;
   padding: 2%;
-  float: left;
+  float: right;
   border-radius: 15px;
-  border: red;
 }
 
 .food-menu-img{
+  width: 40%;
   float: left;
-  width: 200px; 
-  height:200px;
 }
 
 .food-menu-desc{
@@ -67,9 +65,8 @@ margin: 10px 200px 10px;
 }
 .food-detail{
   font-size: 1rem;
-  color: #747d8c;
+  color:red;
 }
-
 
 .foto {
     min-width:100%;
@@ -120,11 +117,11 @@ margin: 10px 200px 10px;
 }
 
 a{
-    color: #ff6b81;
+    color: red;
     text-decoration: none;
 }
 a:hover{
-    color: #ff4757;
+    color: #411519;
 }
 
 .btn{
@@ -316,7 +313,7 @@ a:hover{
   text-align: center;
   font-family: 'Dancing Script', cursive;
   font-size: 2em;
-  color:red;
+  color:black;
 
 }
 .h3-p {

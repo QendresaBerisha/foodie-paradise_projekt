@@ -60,7 +60,7 @@
 
         
 
-        <h2>Ushqimet ne<a href="#" class="text-white">"<?php echo $kategoria_titulli; ?>"</a></h2>
+        <h2 class="h1-menu">Ushqimet në<a href="#" class="text-white">"<?php echo $kategoria_titulli; ?>"</a></h2>
 
  
 
@@ -71,7 +71,7 @@
 
     <div class="container">
 
-        <h2 class="text-center">Ushqimet e Kategorise se zgjedhur</h2>
+        <h2 class="h1-menu">Ushqimet e Kategorisë së zgjedhur</h2>
 
  
 

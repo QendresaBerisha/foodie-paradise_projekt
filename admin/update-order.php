@@ -56,7 +56,7 @@
                 <tr>
                     <td>Cmimi</td>
                     <td>
-                        <b> $ <?php echo $cmimi; ?></b>
+                        <b><?php echo $cmimi; ?>€</b>
                     </td>
                 </tr>
 
