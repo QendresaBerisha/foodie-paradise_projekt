@@ -1,32 +1,4 @@
-<?php include('partials-front/menu.php'); ?>
-
- 
-
-    <!-- fOOD sEARCH Section Starts Here -->
-
-    <section class="food-search text-center">
-
-        <div class="container">
-
-            
-
-            <form action="<?php echo SITEURL; ?>food-search.php" method="POST">
-
-                <input type="search" name="search" placeholder="Search for Food.." required>
-
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
-
-            </form>
-
- 
-
-        </div>
-
-    </section>
-
-    <!-- fOOD sEARCH Section Ends Here -->
-
- 
+<?php include('partials/header.php'); ?>
 
     <?php 
 
@@ -42,15 +14,13 @@
 
     ?>
 
- 
-
     <!-- CAtegories Section Starts Here -->
 
     <section class="categories">
 
         <div class="container">
 
-            <h2 class="text-center">Eksploro Ushqimet</h2>
+            <h2 class="h1-menu">Eksploro Ushqimet</h2>
 
  
 
@@ -58,7 +28,7 @@
 
                 //Create SQL Query to Display CAtegories from Database
 
-                $sql = "SELECT * FROM tbl_category WHERE active='Yes' AND featured='Yes' LIMIT 3";
+                $sql = "SELECT * FROM kategoria WHERE active='Po' AND featured='Po' LIMIT 3";
 
                 //Execute the Query
 
@@ -84,7 +54,7 @@
 
                         $id = $row['id'];
 
-                        $title = $row['title'];
+                        $titulli = $row['titulli'];
 
                         $image_name = $row['image_name'];
 
@@ -92,33 +62,26 @@
 
                         
 
-                        <a href="<?php echo SITEURL; ?>category-foods.php?category_id=<?php echo $id; ?>">
+                        <a href="<?php echo SITEURL; ?>category-food.php?kategoria_id=<?php echo $id; ?>">
 
                             <div class="box-3 float-container">
 
                                 <?php 
 
-                                    //Check whether Image is available or not
-
                                     if($image_name=="")
 
                                     {
 
-                                        //Display MEssage
-
-                                        echo "<div class='error'>Image not Available</div>";
+                                        echo "<div class='error'>Fotografia nuk eshte ne dispozicion!</div>";
 
                                     }
 
                                     else
 
                                     {
-
-                                        //Image Available
-
                                         ?>
 
-                                        <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" alt="Pizza" class="img-responsive img-curve">
+                                        <img src="<?php echo SITEURL; ?>image/category/<?php echo $image_name; ?>" alt="Image not available" class="img-responsive img-curve">
 
                                         <?php
 
@@ -130,14 +93,11 @@
 
  
 
-                                <h3 class="float-text text-white"><?php echo $title; ?></h3>
+                                <h3 class="float-text text-white"><?php echo $titulli; ?></h3>
 
                             </div>
 
                         </a>
-
- 
-
                         <?php
 
                     }
@@ -147,83 +107,49 @@
                 else
 
                 {
-
-                    //Categories not Available
-
-                    echo "<div class='error'>Category not Added.</div>";
+                    echo "<div class='error'>Kategoria nuk eshte shtuar.</div>";
 
                 }
 
             ?>
-
- 
-
             <div class="clearfix"></div>
 
         </div>
 
     </section>
 
-    <!-- Categories Section Ends Here -->
-
-
-
-
-    <!-- fOOD MEnu Section Starts Here -->
-
     <section class="food-menu">
 
         <div class="container">
 
-            <h2 class="text-center">Menu e Ushqimit</h2>
+            <h2 class="h1-menu">Menuja e Ushqimit</h2>
 
  
 
             <?php 
 
-            
-
-            //Getting Foods from Database that are active and featured
-
-            //SQL Query
-
-            $sql2 = "SELECT * FROM tbl_food WHERE active='Yes' AND featured='Yes' LIMIT 6";
-
- 
-
-            //Execute the Query
+            $sql2 = "SELECT * FROM ushqimi WHERE active='Po' AND featured='Po' LIMIT 6";
 
             $res2 = mysqli_query($conn, $sql2);
 
- 
-
-            //Count Rows
-
             $count2 = mysqli_num_rows($res2);
 
- 
-
-            //CHeck whether food available or not
 
             if($count2>0)
 
             {
 
-                //Food Available
-
                 while($row=mysqli_fetch_assoc($res2))
 
                 {
 
-                    //Get all the values
-
                     $id = $row['id'];
 
-                    $title = $row['title'];
+                    $titulli = $row['titulli'];
 
-                    $price = $row['price'];
+                    $cmimi = $row['cmimi'];
 
-                    $description = $row['description'];
+                    $pershkrimi = $row['pershkrimi'];
 
                     $image_name = $row['image_name'];
 
@@ -237,64 +163,48 @@
 
                             <?php 
 
-                                //Check whether image available or not
-
                                 if($image_name=="")
 
                                 {
 
-                                    //Image not Available
-
-                                    echo "<div class='error'>Image not available.</div>";
+                                    echo "<div class='error'>Fotografia nuk eshte ne dispozicion!</div>";
 
                                 }
 
                                 else
 
                                 {
-
-                                    //Image Available
-
                                     ?>
 
-                                    <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                                    <img src="<?php echo SITEURL; ?>image/food/<?php echo $image_name; ?>" alt="Image not available" class="img-responsive img-curve">
 
                                     <?php
 
                                 }
 
                             ?>
-
-                            
-
                         </div>
 
  
 
                         <div class="food-menu-desc">
 
-                            <h4><?php echo $title; ?></h4>
+                            <h4><?php echo $titulli; ?></h4>
 
-                            <p class="food-price">$<?php echo $price; ?></p>
+                            <p class="food-price">$<?php echo $cmimi; ?></p>
 
                             <p class="food-detail">
 
-                                <?php echo $description; ?>
+                                <?php echo $pershkrimi; ?>
 
                             </p>
 
                             <br>
-
- 
-
-                            <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order Now</a>
+                            <a href="<?php echo SITEURL; ?>order.php?ushqimi_id=<?php echo $id; ?>" class="btn btn-primary">Porosit tani</a>
 
                         </div>
 
                     </div>
-
- 
-
                     <?php
 
                 }
@@ -305,9 +215,7 @@
 
             {
 
-                //Food Not Available 
-
-                echo "<div class='error'>Food not available.</div>";
+                echo "<div class='error'>Ushqimi nuk eshte ne dispozicion!</div>";
 
             }
 
@@ -315,40 +223,9 @@
 
             ?>
 
- 
-
-            
-
- 
-
- 
-
- 
-
             <div class="clearfix"></div>
-
- 
-
-            
-
- 
-
         </div>
-
- 
-
-        <p class="text-center">
-
-            <a href="#">Shiko te gjitha ushqimet</a>
-
-        </p>
 
     </section>
 
-    <!-- fOOD Menu Section Ends Here -->
-
- 
-
-    
-
-    <?php include('partials-front/footer.php'); ?
+      <?php include('partials/footer.php'); ?>

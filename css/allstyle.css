@@ -35,6 +35,7 @@ body {
 
 margin: 10px 200px 10px;
 }
+
 .food-menu{
   
   padding: 4% 0;
@@ -45,6 +46,7 @@ margin: 10px 200px 10px;
   padding: 2%;
   float: left;
   border-radius: 15px;
+  border: red;
 }
 
 .food-menu-img{
@@ -90,6 +92,7 @@ margin: 10px 200px 10px;
     width: 80%;
     margin: 0 auto;
     padding: 1%;
+    border:5px solid #bc2127;
 }
 .img-responsive{
     width: 100%;
@@ -129,9 +132,10 @@ a:hover{
   border: none;
   font-size: 1rem;
   border-radius: 5px;
+
 }
 .btn-primary{
-  background-color: #ff6b81;
+  background-color: green;
   color: white;
   cursor: pointer;
 }
@@ -321,7 +325,7 @@ a:hover{
   text-align:center;
   font-size: 30px;
     margin: auto;
-    width: 15%;
+    width: auto;
     border: 3px solid #bc2127;
     padding: 10px;
   }  
@@ -404,4 +408,21 @@ table {
   margin-bottom: 50px;
   font-size: 20px;
   color: #473524;
+}
+.box-3{
+  width: 100%;
+  margin: 4% auto;
+}
+
+.food-menu{
+  padding: 20% 0;
+}
+
+.food-menu-box{
+  width: 90%;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+.order{
+  width: 100%;
 }

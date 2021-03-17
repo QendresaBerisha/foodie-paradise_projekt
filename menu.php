@@ -61,24 +61,17 @@
  
      <section class="food-menu">
          <div class="container1">
-             <h2 class="text-center">Food Menu</h2>
+             <h1 class="h1-menu">Menuja Kryesore</h2>
  
              <?php 
-             
-             //Getting Foods from Database that are active and featured
-             //SQL Query
              $sql2 = "SELECT * FROM ushqimi WHERE  featured='Po' ";
  
-             //Execute the Query
              $res2 = mysqli_query($conn, $sql2);
  
-             //Count Rows
              $count2 = mysqli_num_rows($res2);
  
-             //CHeck whether food available or not
              if($count2>0)
              {
-                 //Food Available
                  while($row=mysqli_fetch_assoc($res2))
                  {
                      //Get all the values
@@ -108,7 +101,7 @@
                              ?>
                              
                          </div>
- 
+                       <
                          <div class="food-menu-desc">
                              <h4><?php echo $titulli; ?></h4>
                              <p class="food-price"><?php echo $cmimi; ?>€</p>
@@ -119,6 +112,7 @@
  
                              <a href="<?php echo SITEURL; ?>order.php?ushqimi_id=<?php echo $id; ?>" class="btn btn-primary">Porosit tani</a>
                          </div>
+                         
                      </div>
  
                      <?php
@@ -175,4 +169,4 @@
      
  </html>
  <br><br>
- <?php include('partials/footer.php'); ?>
+ <?php include('partials/footer.php'); ?> 

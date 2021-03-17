@@ -1,6 +1,6 @@
 <?php include('partials/header.php'); ?>
 
- 
+ <br>
 
 <?php 
 
@@ -82,19 +82,19 @@
 
 <section class="food-search">
 
-    <div class="container">
+    <div class="container1">
 
         
 
-        <h2 class="text-center text-white">Plotesoni formen per te porositur ushqimin.</h2>
-
+        <h2 class="h1-menu">Plotesoni formen per te porositur ushqimin.</h2>
+<br>
  
 
         <form action="" method="POST" class="order">
 
-            <fieldset>
+            <fieldset class="container1">
 
-                <legend>Zgjedhni ushqimin</legend>
+                <legend class= "h3-p">Zgjedhni ushqimin</legend>
 
  
 
@@ -139,6 +139,7 @@
                 </div>
 
  
+                
 
                 <div class="food-menu-desc">
 
@@ -161,16 +162,16 @@
                     
 
                 </div>
-
+                    
  
 
             </fieldset>
 
             
 
-            <fieldset>
+            <fieldset class="container1">
 
-                <legend>Detajet e dergeses</legend>
+                <legend class="h3-p">Detajet e dergeses</legend>
 
                 <div class="order-label">Emri dhe Mbiemri</div>
 
