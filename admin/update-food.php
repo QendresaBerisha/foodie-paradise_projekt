@@ -214,7 +214,8 @@
                     pershkrimi = '$pershkrimi',
                     cmimi = $cmimi,
                     image_name = '$image_name',
-                    kategoria_id = '$kategoria_id',
+                   /* kategoria_id = '$kategoria_id',*/
+                    kategori_id = '$kategoria_id',
                     featured = '$featured',
                     active = '$active'
                     WHERE id=$id

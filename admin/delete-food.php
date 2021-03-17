@@ -13,7 +13,8 @@
         if($image_name != "")
         {
             
-            $path = "../image/food".$image_name;
+            /* $path = "../image/food".$image_name; */
+            $path = "../image/food/".$image_name;
 
             $remove = unlink($path);
 
@@ -34,12 +35,14 @@
         if($res==true)
         {
             //Food Deleted
-            $_SESSION['delete'] = "<div class='success'>Ushqimi eshte fshire me sukses!</div>";\
+           /* $_SESSION['delete'] = "<div class='success'>Ushqimi eshte fshire me sukses!</div>";\ */
+            $_SESSION['delete'] = "<div class='success'>Ushqimi eshte fshire me sukses!</div>";
             header('location:'.SITEURL.'admin/manage-food.php');
         }
         else
         {
-            $_SESSION['delete'] = "<div class='error'>Kemi deshtuar te fshijme Ushqimin!</div>";\
+            /* $_SESSION['delete'] = "<div class='error'>Kemi deshtuar te fshijme Ushqimin!</div>";\ */
+            $_SESSION['delete'] = "<div class='error'>Kemi deshtuar te fshijme Ushqimin!</div>";
             header('location:'.SITEURL.'admin/manage-food.php');
         }
 
