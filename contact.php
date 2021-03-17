@@ -1,5 +1,6 @@
 
 <?php include ('partials/header.php'); ?>
+<br>
 <!DOCTYPE html> 
 <html lang="en">
     <head>
@@ -17,7 +18,7 @@
 
 <div class="row">
 
-             <h1>KONTAKTI
+             <h1>Kontakti
              </h1>
 
 </div>
