@@ -18,7 +18,7 @@
 
     <section class="categories">
 
-        <div class="container">
+        <div class="container1">
 
             <h2 class="h1-menu">Eksploro Ushqimet</h2>
 
@@ -120,7 +120,7 @@
 
     <section class="food-menu">
 
-        <div class="container">
+        <div class="container1">
 
             <h2 class="h1-menu">Menuja e Ushqimit</h2>
 

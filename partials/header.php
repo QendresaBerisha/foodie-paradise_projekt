@@ -54,7 +54,7 @@
 
                 <li>
 
-                        <a href="<?php echo SITEURL; ?>">Home</a>
+                        <a href="<?php echo SITEURL; ?>homepage.php">Home</a>
 
                     </li>
 

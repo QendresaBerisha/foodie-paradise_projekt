@@ -316,6 +316,7 @@ a:hover{
   text-align: center;
   font-family: 'Dancing Script', cursive;
   font-size: 2em;
+  color:red;
 
 }
 .h3-p {
@@ -409,6 +410,35 @@ table {
   font-size: 20px;
   color: #473524;
 }
+@media only screen and (max-width:768px){
+  .logo{
+      width: 80%;
+      float: none;
+      margin: 1% auto;
+  }
+
+  .menu ul{
+      text-align: center;
+  }
+
+  .categories{
+    padding: 20% 0;
+}
+h2{
+    margin-bottom: 10%;
+}
+
+  .btn{
+      width: 91%;
+      padding: 2%;
+  }
+
+  .food-search{
+      padding: 10% 0;
+  }
+
+
+
 .box-3{
   width: 100%;
   margin: 4% auto;
@@ -425,4 +455,5 @@ table {
 }
 .order{
   width: 100%;
+}
 }

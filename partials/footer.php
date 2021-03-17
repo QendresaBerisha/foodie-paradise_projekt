@@ -4,7 +4,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
-<link rel='stylesheet' type='text/css' href='css/allstyle.css'>
+<!--<link rel='stylesheet' type='text/css' href='css/allstyle.css'>-->
 
 
 
